@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Fatema 🤍</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Hind+Siliguri:wght@300;400;600&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div id="heart-container"></div>
+
+    <!-- Screen 1: Welcome -->
+    <section class="screen active" id="screen1">
+        <div class="content">
+            <h1 class="fade-in">👀 Hey Fatema…</h1>
+            <p class="sub-text">I made something small for you… <br> don’t rush, just open it slowly 🤍</p>
+            <button class="btn" onclick="nextScreen(2)">Start ✨</button>
+        </div>
+    </section>
+
+    <!-- Screen 2: Birthday Reveal -->
+    <section class="screen" id="screen2">
+        <div class="content">
+            <h1 class="pop">Happy Birthday Fatema 🎂</h1>
+            <p>Today is a special day… <br> because someone special was born ✨</p>
+            <p class="playful">And yes… it’s you 😌🤍</p>
+            <button class="btn" onclick="nextScreen(3); startConfetti();">Next →</button>
+        </div>
+    </section>
+
+    <!-- Screen 3: Notepad Message -->
+    <section class="screen" id="screen3">
+        <div class="notepad-container">
+            <div class="notepad">
+                <div class="handwritten-text">
+                    শুভ জন্মদিন, ফাতেমা। ❤️ <br><br>
+                    রাত ১১টা বাজতেই ভাবলাম, আজকে তোকে সবার আগে উইশ না করলে চলবে না। যদি তা হলে আরেকটু পটে যাস, এই আরকি। <br><br>
+                    আসলে তোর জন্য আলাদা করে কী লিখব, বুঝতে পারছি না। তুই এমন একজন মানুষ, যাকে নিয়ে অনেক কিছু বলতে ইচ্ছা করে, কিন্তু লিখতে গেলে সব গুলিয়ে যায়। <br><br>
+                    শুধু এতটুকুই বলি—তুই ভালো থাকলেই আমার ভালো লাগে। তুই সব সময় হ্যাপি থাকিস, তোর মন ভালো থাকুক, তোর সব ইচ্ছা পূরণ হোক। এটাই চাই। <br><br>
+                    জানিস, পৃথিবীতে অনেক মানুষ আসে-যায়, কিন্তু কিছু মানুষ অজান্তেই অনেক আপন হয়ে যায়। তুই আমার কাছে ঠিক তেমনই একজন মানুষ। <br><br>
+                    আজ তোর আনন্দের দিন। আজ আমি চাই, তুই হ্যাপি থাকবি, আর দাঁত কেলিয়ে হাসবি 😌❤️ <br><br>
+                    আর হ্যাঁ, কেক খাবি—আমার জন্য একটু রেখে দিবি 😭🎂 <br><br>
+                    আজকে তোর বয়স এক বছর বাড়ল, কিন্তু পাকামির লেভেল দেখে মনে হয় তুই অনেক আগেই “pro” হয়ে গেছোস 😏 <br><br>
+                    তোকে অনেক ধন্যবাদ আমার জীবনে থাকার জন্য। এত জালায় তোরে তাও কখনো ছেড়ে যাস নাই—এটাই অনেক বড় কথা 😌 <br><br>
+                    আল্লাহ তোকে সবসময় ভালো রাখুক, সুস্থ রাখুক, আর তোর জীবনের প্রতিটা দিন যেন একটু একটু করে সুন্দর হয় 🤍 <br><br>
+                    Btw Happy Birthday Habla 😁 <br><br>
+                    আরেকটা কথা—আজকে তোর জন্মদিন, তাই একদিনের জন্য বেশি ভাব নিবি না। কাল থেকে আবার আগের মতোই জ্বালাবো 😌🤍
+                </div>
+            </div>
+        </div>
+        <button class="btn" onclick="nextScreen(4)">Keep Reading ✨</button>
+    </section>
+
+    <!-- Screen 4: Secret Section -->
+    <section class="screen" id="screen4">
+        <div class="content">
+            <button class="btn secret-btn" id="secretBtn" onclick="revealSecret()">Fardin’s Secret 🤫</button>
+            <div class="secret-box" id="secretBox"></div>
+            <button class="btn" id="finalNextBtn" style="display: none;" onclick="nextScreen(5)">One last thing... 🤍</button>
+        </div>
+    </section>
+
+    <!-- Screen 5: Final Screen -->
+    <section class="screen" id="screen5">
+        <div class="content">
+            <p class="emotional-note">Some people come and go… but some stay quietly in the heart. Fatema is one of them 🤍</p>
+            <h1 class="big-wish">Happy Birthday <br> Fatema 🎂🌸</h1>
+            <div class="signature">— Fardin ❤️</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
